@@ -1,3 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  background-color: lightseagreen;
+  color: #000;
+
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif; 
+
+  /* font-family:'Courier New', Courier, monospace */
+  /* font: normal 16px 'Roboto', sans-serif; */
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: blue;
+}
+
+.avatar {
+  width: 200px;
+  border-radius: 28px;
+  box-shadow: 6px -2px 20px rgba(0, 0, 33, 025);
+}
+
+.info {
+  margin-bottom: 20px;
+}
+
+.info p {
+  color: #17011d;
+  margin:0;
+  /*text-transform: uppercase;*/
+  text-decoration: none;
+  letter-spacing: 1px;
+  word-spacing: 11px;
+}
+
+.social {
+  background: red;
+  padding: 15px;
+  border: 5px solid rgb(102, 207, 15);
+  border-bottom: 7px dotted ;
+  margin: 20px;
+}
+
+.container {
+  max-width: 750px;
+  margin: auto;
+
+}
+
+.bg-yellow {
+  background: #fff9dc;
+}
+
+.bg-green {
+  background: #e5ffe7;
+}
+
+.bg-red {
+  background: #ffe5e5;
+}
+
+.card {
+  padding: 15px 20px;
+  opacity: 0.55;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.list {
+  padding: 0 20px;
+  //list-style: none;
+}
+
+.list li {
+  color: blueviolet;
+}
+
+
+
+
+
+
+
+
+
+
+
 hr {
   border: none;
   border-top: 3px double #333;
@@ -8,17 +110,8 @@ hr {
 }
 
 hr:after {
-  background: #fff;
-  content: '§';
+  content: '.o§o.';
   padding: 0 4px;
   position: relative;
   top: -13px;
 }
-
-/* hr:before {
-  background: #888;
-  content: '^^^';
-  padding: 0 4px;
-  position: relative;
-  bottom:13px;
-} */
