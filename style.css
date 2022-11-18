@@ -6,7 +6,7 @@ body {
 
   font-size: 16px;
   font-weight: normal;
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Roboto', sans-serif;
 
   /* font-family:'Courier New', Courier, monospace */
   /* font: normal 16px 'Roboto', sans-serif; */
@@ -26,18 +26,35 @@ a:active {
 }
 
 .avatar {
+  margin-right: 30px;
   width: 200px;
   border-radius: 28px;
   box-shadow: 6px -2px 20px rgba(0, 0, 33, 025);
+  margin-bottom: 10px;
 }
 
 .info {
-  margin-bottom: 20px;
+
+  display: flex;
+}
+
+@media (max-width:600px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+}
+
+.info>.info-text {
+  border-radius: 28px;
+  box-shadow: 6px -2px 20px rgba(0, 0, 33, 025);
+  padding: 20px;
+  margin-bottom: 10px;
 }
 
 .info p {
   color: #17011d;
-  margin:0;
+  margin: 0;
   /*text-transform: uppercase;*/
   text-decoration: none;
   letter-spacing: 1px;
@@ -48,13 +65,14 @@ a:active {
   background: red;
   padding: 15px;
   border: 5px solid rgb(102, 207, 15);
-  border-bottom: 7px dotted ;
+  border-bottom: 7px dotted;
   margin: 20px;
 }
 
 .container {
   max-width: 750px;
   margin: auto;
+  padding-top: 25px;
 
 }
 
@@ -83,19 +101,97 @@ a:active {
 
 .list {
   padding: 0 20px;
-  //list-style: none;
+  /*list-style: none;*/
 }
 
 .list li {
   color: blueviolet;
+  margin-bottom: 7px;
+  border-bottom: 1px solid black;
 }
 
+.table {
+  color: #222;
+  width: 100%;
+}
 
+.table td {
+  padding-bottom: 10px;
+}
 
+.table td:nth-child(2),
+.table td:nth-child(3) {
+  color: #4755ff;
+}
 
+/* .table tr:nth-child(odd) {
+  background-color: red;
+} */
 
+.link-list {
+  color: #111;
+  list-style: none;
+  padding: 0;
+}
 
+.link-list li {
+  border-bottom: 2px solid gray;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
 
+.contact h2 {
+  text-align: center;
+}
+
+.form-group label {
+  display: block;
+  color: grey;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #555;
+  color: #000;
+  padding: 15px 0 10px;
+  font-family: inherit;
+  outline: none;
+}
+
+/*.form-group {
+  margin: auto;
+  max-width: 300px;
+}*/
+
+.row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.row>.form-group {
+  width: 50%;
+}
+
+.row>.form-group:first-child {
+  margin-right: 25px;
+}
+
+.btn {
+  padding: 15px 20px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  font-family: inherit;
+  background: #17011d;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
 
 
 
@@ -110,7 +206,7 @@ hr {
 }
 
 hr:after {
-  content: '.o§o.';
+  content: '▂▃▅▇█▓▒░ 龴ↀ◡ↀ龴 ░▒▓█▇▅▃▂';
   padding: 0 4px;
   position: relative;
   top: -13px;

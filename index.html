@@ -10,12 +10,14 @@
       <div class="info">
         <img class="avatar" src="avatar.jpg" alt="тут фотка" />
 
-        <h1>Денисюк Игорь</h1>
-        <p><em>Я изучаю JS <strong>VK канал</strong></em></p>
-        <p>Я люблю путешестовать, заниматься спортом и программировать</p>
+        <div class="info-text">
+          <h1>Денисюк Игорь</h1>
+          <p><em>Я изучаю <strong>JavaScript</strong>.</em></p>
+          <p>Я люблю путешестовать, заниматься спортом и программировать.</p>
 
-        <h4>Мои социальные сети</h4>
-        <a href="https://vk.com/sunwithus_id" target="_blank">VK</a> | <a target="_blank" href="http://vv.sunwithus.ru/">swu</a>
+          <h4>Мои социальные сети</h4>
+          <a href="https://vk.com/sunwithus_id" target="_blank">VK</a> | <a target="_blank" href="http://vv.sunwithus.ru/">swu</a>
+        </div>
 
       </div>
 
@@ -33,53 +35,76 @@
 
       <div class="card bg-yellow">
         <h2>Опыт работы</h2>
-        <table>
+        <table class="table">
+ <!-- 
           <tr>
             <th>Компания</th>
             <th>Должность</th>
             <th>Год</th>
           </tr>
+ -->       
           <tr>
-            <td>EPAM</td>
-            <td>Software Engineer</td>
-            <td>2016 - 2017</td>
+            <td>ДВРЦНИТ, отдел связи и сигнализации
+            </td>
+            <td>Communications Engineer</td>
+            <td>2007 - 2008</td>
           </tr>
           <tr>
-            <td>Software Outsorcing Services</td>
-            <td>Lead Frontend</td>
-            <td>2017 - 2019</td>
+            <td>КОРДОН-ИНФОРМ</td>
+            <td>Video Surveillance Engineer</td>
+            <td>2008 - 2009</td>
+          </tr>
+          <tr>
+            <td>ПРО-СЕРВИС</td>
+            <td>Service Center Engineer</td>
+            <td>2009 - 2010</td>
+          </tr>
+          <tr>
+            <td>РАДИО</td>
+            <td>Software Engineer</td>
+            <td>2010 - now</td>
           </tr>
         </table>
       </div>
 
       <div class="card bg-red">
         <h2>Youtube Курсы</h2>
-        <a href="youtube.html">Посмотреть список</a>
+        <ul class="link-list">
+          <li>
+            <a href="https://www.youtube.com/watch?v=Bluxbh9CaQ0">JavaScript Основы для Начинающих - Полный Курс за 6 часов [2020]</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=Bluxbh9CaQ0">JavaScript та же самая ссылка</a>
+          </li>
+        </ul>
       </div>
       
-      <div class="card">
+      <div class="contact">
         <h2>Связаться со мной</h2>
 
         <form action="/">
-          <label for="name">Ваше имя:</label>
-          <input type="text" id="name" placeholder="Введите ваше имя...">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" placeholder="Введите ваше имя...">
+            </div>
+            <div class="form-group">
+              <label for="email">Ваш email:</label>
+              <input type="email" id="email" placeholder="Введите email...">
+            </div>
+          </div>
+          
 
-          <br>
+          <div class="form-group">
+            <label for="text">Вашe сообщение:</label>
+            <textarea id="text" rows="2" cols="15"></textarea>
+          </div>
+            
+          <input class="btn" type="submit" value="Связаться!">
 
-          <label for="email">Ваш Email:</label>
-          <input type="email" id="email" placeholder="Введите email...">
-
-          <br>
-
-          <label for="text">Вашe сообщение:</label>
-          <br>
-          <textarea id="text" rows="2" cols="15"></textarea>
-
-          <br>
-
-          <input type="submit" value="Связаться!">
         </form>
       </div>
+    </div class="position"
 
   </div>
   </body>
